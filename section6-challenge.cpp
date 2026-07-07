@@ -32,9 +32,11 @@ using namespace std;
 int main() 
 {
     cout << "Hello, welcome to Frank's Carpet Cleaning Service" << endl;
+
     cout << "\nHow many small rooms would you like cleaned? ";
     int number_of_small_rooms {0};
     cin >> number_of_small_rooms;
+    
     cout << "How many large rooms would you like cleaned? ";
     int number_of_large_rooms {0};
     cin >> number_of_large_rooms;
