@@ -54,12 +54,22 @@ int main()
     //     cout << ((i % 10 == 0) ? "\n" : " ");
     // }
 
-    vector <int> nums {10, 20, 30, 40, 50};
+    // vector <int> nums {10, 20, 30, 40, 50};
 
-    for (unsigned i {0}; i < nums.size(); i++)
+    // for (unsigned i {0}; i < nums.size(); i++)
+    // {
+    //     cout << nums.at(i) << endl;
+    // }
+
+
+    int sum {0};
+
+    for (int i {1}; i <= 15; i++)
     {
-        cout << nums.at(i) << endl;
+        sum += ((i % 2 != 0)? i : 0);
     }
+
+    cout << "Sum: " << sum << endl;
 
     return 0;    
 }
