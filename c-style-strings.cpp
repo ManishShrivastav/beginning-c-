@@ -53,7 +53,33 @@ int main()
     {
         cout << temp << " and " << full_name << " are the different" << endl;
     }
-    
+
+    cout <<"----------------------------------" << endl;
+    for (size_t i {0}; i < strlen(full_name); i++)
+    {
+        if (isalpha(full_name[i]))
+        {
+            full_name[i] = toupper(full_name[i]);
+        }        
+    }
+    cout << "Your full name is " << full_name << endl;
+
+    cout <<"----------------------------------" << endl;
+    if (strcmp(temp, full_name) == 0)
+    {
+        cout << temp << " and " << full_name << " are the same" << endl;
+    }
+    else
+    {
+        cout << temp << " and " << full_name << " are the different" << endl;
+    }
+
+    cout <<"----------------------------------" << endl;
+    cout << "Result of comparing " << temp << " and " << full_name << ": " << strcmp(temp, full_name) << endl;
+    cout << "Result of comparing " << full_name << " and " << temp << ": " << strcmp(full_name, temp) << endl;
+
+
+    cout << endl;
     
     return 0;
 }
