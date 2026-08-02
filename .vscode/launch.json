@@ -10,9 +10,34 @@
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "externalConsole": false,
+
             "MIMode": "gdb",
             "miDebuggerPath": "/usr/bin/gdb",
-            "preLaunchTask": "Custom C++ Build Task"
+
+            "preLaunchTask": "Custom C++ Build Task",
+
+            "setupCommands": [
+                {
+                    "description": "Enable GDB pretty printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Skip C++ standard library headers",
+                    "text": "skip -gfi /usr/include/c++/*",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Skip architecture-specific C++ headers",
+                    "text": "skip -gfi /usr/include/*/c++/*",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Skip system headers",
+                    "text": "skip -gfi /usr/include/*",
+                    "ignoreFailures": true
+                }
+            ]
         }
     ]
 }
