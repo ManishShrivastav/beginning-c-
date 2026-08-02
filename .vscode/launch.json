@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build, Run and Debug C++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.out",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "Custom C++ Build Task"
+        }
+    ]
+}
