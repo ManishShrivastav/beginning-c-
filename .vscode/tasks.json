@@ -2,20 +2,32 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Custom C++ Build Task",
+            "label": "Build Single C++ File",
             "type": "shell",
-            "command": "g++",
+            "command": "clang++",
             "args": [
                 "-g",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/main.out"
+                "${fileDirname}/main.out"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${fileDirname}"
             },
-            "group": "build",
-            "problemMatcher": "$gcc"
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build C++ Project Folder",
+            "type": "shell",
+            "command": "clang++ -g *.cpp -o main.out",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }
