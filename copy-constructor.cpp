@@ -42,7 +42,7 @@ void display_player(Player p) {
 }
 
 int main() {    
-     Player empty {"XXXXXX", 100, 50};
+    Player empty {"XXXXXX", 100, 50};
     
     Player my_new_object {empty};
     
