@@ -23,7 +23,7 @@ class Account
             return balance;
         }
 
-        // methods will be declared outside the class declaration
+        // methods will be implemented outside the class declaration
         void set_name(string n);
         string get_name();
 
