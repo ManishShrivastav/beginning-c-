@@ -13,8 +13,6 @@ private:
     int health;
      int xp;  
 public:
-    // Constructor
-    Player();
     // Getter and Setter methods
     std::string get_name() const {         // consty method
         return name;
