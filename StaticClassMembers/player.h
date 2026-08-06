@@ -14,7 +14,7 @@ public:
     int get_health() {return health;}
     int get_xp() {return xp;}
     Player(std::string name_val = "None", int health_val = 0, int xp_val = 0);
-    // Copy Constructor
+    // Copy Constructor (required because we have a static member variable)
     Player(const Player &source);
     // Destructor
     ~Player();
