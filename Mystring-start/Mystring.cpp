@@ -35,12 +35,14 @@ Mystring::~Mystring() {
 
 
 // Display method
-void Mystring::display() const {
+void Mystring::display() const {                    // const is used here to indicate that 
+                                                    // this method does not modify the object
     std::cout << str << " : " << get_length() << std::endl;
 }
 
 // Getter method for length of string
-int Mystring::get_length() const {
+int Mystring::get_length() const {                  // const is used here to indicate that 
+                                                    // this method does not modify the object
     return std::strlen(str);
 }
 

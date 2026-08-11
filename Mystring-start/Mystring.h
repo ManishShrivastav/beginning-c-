@@ -13,7 +13,8 @@ class Mystring {
 
         void display() const; // Display method
         int get_length() const; // Getter method for length of string
-        const char *get_str() const; // Getter method for string
+        const char *get_str() const; // Getter method for string (We return a pointer to the string, 
+                                                                    // so we can use it in other functions)
 };
 
 #endif // _MYSTRING_H_
