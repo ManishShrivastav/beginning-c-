@@ -1,6 +1,8 @@
 #ifndef _MYSTRING_H_
 #define _MYSTRING_H_
 
+#include <iosfwd>
+
 class Mystring {
     private:
         char *str; // pointer to a char[] that holds a C-style string
