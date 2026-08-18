@@ -18,6 +18,8 @@ public:
     bool deposit(double amount);
     bool withdraw(double amount);
     double get_balance() const;
+
+    friend std::ostream &operator<<(std::ostream &os, const Account &account);
 };
 
 #endif // _ACCOUNT_H_
