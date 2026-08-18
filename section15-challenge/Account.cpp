@@ -26,6 +26,6 @@ double Account::get_balance() const {
 }
 
 std::ostream &operator<<(std::ostream &os, const Account &account) {
-    os << "[Account: " << account.name << ", " << account.balance << "]";
+    os << "[Account: " << account.name << ": " << account.balance << "]";
     return os;
 }
