@@ -14,6 +14,7 @@ public:
     bool withdraw(double amount);
     // Inherits Account::deposit methods
     // Inherits Account::get_balance methods
+    friend std::ostream &operator<<(std::ostream &os, const Checking_Account &account);
 };
 
 #endif // _CHECKING_ACCOUNT_H_
