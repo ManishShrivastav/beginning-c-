@@ -14,8 +14,8 @@ private:
     static constexpr double MAX_WITHDRAW_PERCENTAGE = 0.2; // Maximum withdrawal percentage
 
 protected:
-    int withdrawals; // Track the number of withdrawals
-    
+    int num_withdrawals; // Track the number of withdrawals
+
 public:
     Trust_Account(std::string name = DEFAULT_NAME, double balance = DEFAULT_BALANCE, double interest_rate = DEFAULT_INTEREST_RATE);
     
