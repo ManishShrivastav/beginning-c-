@@ -48,15 +48,15 @@ int main() {
     p3->withdraw(1000);
     p4->withdraw(1000);
     
-    // std::cout << "\n === Array ==== " << std::endl;
-    // Account *array [] = {p1,p2,p3,p4};
-    // for (auto i=0; i<4; ++i)
-    //     array[i]->withdraw(1000);
+    std::cout << "\n === Array ==== " << std::endl;
+    Account *array [] = {p1,p2,p3,p4};
+    for (auto i=0; i<4; ++i)
+        array[i]->withdraw(1000);
         
-    // std::cout << "\n === Array ==== " << std::endl;
-    // array[0] = p4;
-    // for (auto i=0; i<4; ++i)
-    //     array[i]->withdraw(1000);
+    std::cout << "\n === Array ==== " << std::endl;
+    array[0] = p4;
+    for (auto i=0; i<4; ++i)
+        array[i]->withdraw(1000);
     
     std::cout << "\n === Clean up ==== " << std::endl;
     delete p1;
