@@ -5,7 +5,7 @@
 #include "Savings_Account.h"
 
 class Trust_Account : public Savings_Account {
-    friend std::ostream &operator<<(std::ostream &os, const Trust_Account &account);
+    // friend std::ostream &operator<<(std::ostream &os, const Trust_Account &account);
 private:
     static constexpr const char *def_name = "Unnamed Trust Account";
     static constexpr double def_balance = 0.0;
@@ -24,7 +24,8 @@ public:
 
     // Only 3 withdrawals allowed, each limited to 20% of the account balance
     virtual bool withdraw(double amount) override;
-    
+
+    virtual void print(std::ostream &os) const override;
     virtual ~Trust_Account() = default;
 };
 
