@@ -28,8 +28,7 @@ int main() {
         moes_account->withdraw(500.0);
         std::cout << *moes_account << std::endl;
         moes_account->withdraw(1000.0);
-        std::cout << *moes_account << std::endl;
-        
+        std::cout << *moes_account << std::endl;        
     }
     catch (const IllegalBalanceException &ex)
     {
