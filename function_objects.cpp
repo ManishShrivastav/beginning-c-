@@ -51,6 +51,7 @@ int main() {
     std::cout << std::endl;
 
     std::for_each(vec2.begin(), vec2.end(), Displayer<std::string>()); // displays Larry Moe Curly
+    std::cout << std::endl;
 
     std::for_each(vec2.begin(), vec2.end(), d2); // displays Larry Moe Curly
     std::cout << std::endl;
